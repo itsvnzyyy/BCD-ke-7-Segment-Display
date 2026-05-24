@@ -1,6 +1,10 @@
 # 🚀 Rangkaian BCD ke 7-Segment Display Menggunakan IC CD4511
 
-Laporan Praktikum Sistem Digital - **Modul VIII** Nama: **Alvin Syahrinaldi** | NIM: **H1H025040** Shift: **B -> C**
+## 👥 Anggota Kelompok 3
+
+* **Alvin Syahrinaldi (H1H025040)** 
+* **Nama (NIM)** 
+* **Nama (NIM)** 
 
 ---
 
@@ -11,10 +15,10 @@ Proyek ini merupakan simulasi rangkaian **BCD (Binary Coded Decimal) ke 7-Segmen
 
 ## 🛠️ Tata Letak & Skematik Rangkaian
 
-Berikut adalah visualisasi hasil *wiring* komponen yang dirancang pada ruang kerja Tinkercad:
+Berikut adalah visualisasi hasil *wiring* komponen yang dirancang pada Tinkercad:
 
-![Skematik Rangkaian](https://images.squarespace-cdn.com/content/v1/5f3ffbe13ed7dc6ee58e9947/1715878479374-S7C26F9M0H7W6DURD7H3/image-asset.png) 
-*(Catatan: Anda bisa mengganti URL gambar di atas dengan hasil screenshot rangkaian Anda sendiri jika sudah di-upload ke GitHub)*
+<img width="890" height="364" alt="image" src="https://github.com/user-attachments/assets/b3d3be14-0f2f-49b0-838f-ef30dda0ff72" />
+
 
 ### Komponen Utama yang Digunakan:
 * **1x** IC CD4511 (BCD to 7-Segment Decoder)
@@ -42,11 +46,11 @@ Konfigurasi sakelar diatur dengan menetapkan **SW1 sebagai MSB (Bit D)** dan **S
 | 9  |    1    |    0    |    0    |    0    |    8     | a, b, c, d, e, f, g|
 | 10 |    1    |    0    |    0    |    1    |    9     | a, b, c, d, f, g   |
 
-> ⚠️ **Info Penting:** Jika input biner dimasukkan melebihi `1001` (desimal 10–15), layar display akan otomatis mati (*blanking*) karena input tersebut tidak valid dalam pengkodean BCD.
+> ⚠️ Jika input biner dimasukkan melebihi `1001` (desimal 10–15), layar display akan otomatis mati (*blanking*) karena input tersebut tidak valid dalam pengkodean BCD.
 
 ---
 
-## 📝 Kesimpulan Analisis
+## 📝 Kesimpulan
 
 * **Prinsip Kerja Dekoder:** IC CD4511 berhasil mengubah kode biner 4-bit dari DIP Switch menjadi sinyal paralel yang menyalakan kombinasi segmen LED tertentu (a-g) untuk memunculkan angka desimal 0-9.
 * **Kesesuaian Komponen:** Karena IC CD4511 bekerja dengan logika aktif-tinggi (*Active-HIGH*), rangkaian ini wajib dipasangkan dengan *7-Segment Display* tipe **Common Cathode** yang pin bersamanya dihubungkan ke *Ground* (GND).
